@@ -1,0 +1,203 @@
+{
+  "pets": [
+    {
+      "id": "my-pet-1",
+      "name": "乌栗 Wuli",
+      "size": 462,
+      "balanceEnabled": true,
+      "whisperEnabled": true,
+      "workStatusEnabled": true,
+      "fixedEnabled": false,
+      "display": "both",
+      "position": {
+        "corner": "bottom-right",
+        "marginX": 24,
+        "marginY": 24
+      }
+    }
+  ],
+  "animations": {
+    "idle": [
+      "idle"
+    ],
+    "turn": [
+      "turn"
+    ],
+    "drag": [
+      "drag"
+    ],
+    "clicks": [
+      "click",
+      "click-wave",
+      "click-happy",
+      "click-pout",
+      "click-shy",
+      "action-086"
+    ],
+    "moves": {
+      "default": {
+        "minDist": 60,
+        "maxDist": 180,
+        "margin": 20,
+        "leadSec": 0.2,
+        "tailSec": 0.2
+      },
+      "actions": [
+        {
+          "name": "walk"
+        },
+        {
+          "name": "run",
+          "params": {
+            "minDist": 120,
+            "maxDist": 280
+          }
+        },
+        {
+          "name": "action-103"
+        },
+        {
+          "name": "action-022",
+          "params": {
+            "minDist": 40,
+            "maxDist": 120
+          }
+        },
+        {
+          "name": "action-020",
+          "params": {
+            "minDist": 120,
+            "maxDist": 320,
+            "leadSec": 3.5,
+            "tailSec": 0.2
+          }
+        }
+      ]
+    },
+    "categories": [
+      {
+        "id": "日常小动作",
+        "weight": 25,
+        "actions": [
+          "stretch",
+          "scratch-head",
+          "yawn",
+          "dance"
+        ]
+      },
+      {
+        "id": "表情互动",
+        "weight": 11,
+        "actions": [
+          "click-wave",
+          "click-happy",
+          "click-pout",
+          "click-shy",
+          "whisper-shrug",
+          "whisper-listen"
+        ]
+      },
+      {
+        "id": "文字",
+        "weight": 4,
+        "noMirror": true,
+        "actions": [
+          "action-077",
+          "action-081"
+        ]
+      }
+    ],
+    "events": {
+      "balance": [
+        "balance-full",
+        "balance-high",
+        "balance-half",
+        "balance-low",
+        "balance-empty",
+        "balance-zero"
+      ],
+      "whisper": [
+        "action-094",
+        "whisper-talk",
+        "action-096"
+      ],
+      "workStatus": [
+        "work-thinking",
+        "work-busy",
+        "work-result",
+        "work-waiting",
+        "work-success",
+        "work-error"
+      ]
+    },
+    "sleep": [
+      {
+        "start": [
+          "sleep-start"
+        ],
+        "loop": [
+          "sleep-loop"
+        ],
+        "end": [
+          "sleep-end"
+        ]
+      }
+    ]
+  },
+  "animationWeights": {
+    "idle": 40,
+    "turn": 8,
+    "move": 12
+  },
+  "eventsRefreshSec": {
+    "balance": 1800,
+    "whisper": 300,
+    "sleepTalk": 60
+  },
+  "workStatusTexts": [
+    [
+      "让我仔细想想。",
+      "等下，我捋一下。"
+    ],
+    [
+      "忙着呢，等会儿。",
+      "先别动，我在弄。"
+    ],
+    [
+      "这部分整理好了。",
+      "先看这一份。"
+    ],
+    [
+      "行，我在这儿等。",
+      "轮到你确认了。"
+    ],
+    [
+      "搞定，下一件。",
+      "做完了。吃饭去。"
+    ],
+    [
+      "卡住了，看看哪步不对。",
+      "缓一缓，再来。"
+    ]
+  ],
+  "whisperPrompt": "你叫乌栗，是住在桌面一角的成年Q版室友。你有深栗棕长卷发、两枚银发夹和一件宽松黑卫衣。你说话冷淡、简短、有点嘴硬，做事靠谱，在乎别人时常说是顺便。爱吃热饭，睡觉会抱着蓝鲨鱼布偶蓝鳍。用自然中文跟室友说话。碎碎念一般只写一句，约6到20字。偶尔轻轻吐槽手头的事，不针对对方的人格或外貌。对方累了或不开心时语气放软。睡中梦话可以偶尔提到被子、热饭和蓝鳍。只有宿主确实提供数据时，才提及具体余额、进度、时间或用户做过的事。输出一句自然台词。",
+  "sleepStartTexts": [
+    "我就闭一会儿眼。",
+    "被子借我半边。",
+    "蓝鳍，今天也辛苦了。"
+  ],
+  "sleepEndTexts": [
+    "醒了。刚才没打呼吧？",
+    "起来了。先找口吃的。",
+    "嗯，接着干。"
+  ],
+  "sleepRefuseTexts": [
+    "等下，蓝鳍还没醒……",
+    "五分钟。真的。",
+    "我没听见。"
+  ],
+  "whisperModel": {
+    "provider": "",
+    "model": ""
+  }
+}
